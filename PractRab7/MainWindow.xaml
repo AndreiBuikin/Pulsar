@@ -1,0 +1,25 @@
+﻿<Window x:Class="PractRab7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PractRab7"
+        mc:Ignorable="d"
+       Title="Пульсар" Width="800" Height="900">
+    <Grid>
+        <Ellipse x:Name="pulseCircle" Width="200" Height="200">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Red" Offset="0" />
+                    <GradientStop Color="Orange" Offset="0" x:Name="gradientStop" />
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+            <Ellipse.RenderTransform>
+                <ScaleTransform ScaleX="1" ScaleY="1" x:Name="scaleTransform" />
+            </Ellipse.RenderTransform>
+            <Ellipse.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" Opacity="0.5" ShadowDepth="0" />
+            </Ellipse.Effect>
+        </Ellipse>
+    </Grid>
+</Window>
